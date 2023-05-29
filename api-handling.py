@@ -1,6 +1,8 @@
 from requests_oauthlib import OAuth1Session
 from datetime import date, timedelta
 from azure.storage.filedatalake import DataLakeServiceClient
+from azure.identity import DefaultAzureCredential
+from azure.keyvault.secrets import SecretClient
 
 def authenticate(consumer_key, consumer_secret):
     oauth = OAuth1Session(consumer_key, client_secret=consumer_secret)
@@ -31,12 +33,17 @@ def download_data_to_azure(oauth, download_link, account_name, account_key, file
 
 def main():
     try:
-        consumer_key = 'your_consumer_key'
-        consumer_secret = 'your_consumer_secret'
-        account_name = 'your_account_name'
-        account_key = 'your_account_key'
-        file_system_name = 'your_file_system_name'
-        nifEmpresa = 'B12985073'
+        # Set up Azure Key Vault client
+        credential = DefaultAzureCredential()
+        secret_client = SecretClient(vault_url="https://<your-key-vault-name>.vault.azure.net", credential=credential)
+
+        # Retrieve secrets
+        consumer_key = secret_client.get_secret('CONSUMER_KEY').value
+        consumer_secret = secret_client.get_secret('CONSUMER_SECRET').value
+        account_name = secret_client.get_secret('ACCOUNT_NAME').value
+        account_key = secret_client.get_secret('ACCOUNT_KEY').value
+        file_system_name = secret_client.get_secret('FILE_SYSTEM_NAME').value
+        nifEmpresa = secret_client.get_secret('NIFEMPRESA').value
 
         oauth = authenticate(consumer_key, consumer_secret)
         url = create_url(nifEmpresa)
