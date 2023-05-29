@@ -1,5 +1,5 @@
 from requests_oauthlib import OAuth1Session
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 from azure.storage.filedatalake import DataLakeServiceClient
 from azure.identity import DefaultAzureCredential
 from azure.keyvault.secrets import SecretClient
@@ -18,9 +18,25 @@ def create_url(nifEmpresa):
 
 def get_download_link(oauth, url):
     response = oauth.get(url)
-    download_link = response.json().get('download_link', '')
+
+    data = response.json()
+    if not data:
+        raise Exception("No data found in the response")
+
+    # Parse the date string into a datetime object
+    # Assumes date format is "YYYY-MM-DD HH:MM:SS"
+    for obj in data:
+        obj['fechaDisponibilidad'] = datetime.strptime(obj['fechaDisponibilidad'], "%Y-%m-%d %H:%M:%S")
+
+    # Sort the data by fechaDisponibilidad, latest first
+    data.sort(key=lambda obj: obj['fechaDisponibilidad'], reverse=True)
+
+    # Get the download link from the first object (the latest one)
+    download_link = data[0].get('uriDescarga', '')
+
     if not download_link:
         raise Exception("Download link not found in the response")
+
     return download_link
 
 def download_data_to_azure(oauth, download_link, account_name, account_key, file_system_name, file_name):
