@@ -1,6 +1,9 @@
 # Optimal Location Identification for Solar Panel Installation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/github/workflow/status/mistermakc/solar-energy-spatial-prediction/CI)](https://github.com/mistermakc/solar-energy-spatial-prediction/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/mistermakc/solar-energy-spatial-prediction)](https://github.com/mistermakc/solar-energy-spatial-prediction/blob/main/LICENSE)
+[![Version](https://img.shields.io/github/v/release/mistermakc/solar-energy-spatial-prediction)](https://github.com/mistermakc/solar-energy-spatial-prediction/releases)
 
 This project aims to develop a system for identifying optimal locations for the installation of new solar panel facilities based on electricity consumption data linked to cadastral references. The system will leverage the Barter tool, which provides cadastral data related to a geometric area defined over the Spanish geography.
 
@@ -93,3 +96,5 @@ The provided code is part of the validation process for the project. Financial v
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+[![License](https://img.shields.io/github/license/mistermakc/solar-energy-spatial-prediction)](https://github.com/mistermakc/solar-energy-spatial-prediction/blob/main/LICENSE)
+
