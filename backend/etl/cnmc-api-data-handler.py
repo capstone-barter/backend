@@ -11,7 +11,7 @@ def authenticate(consumer_key, consumer_secret):
     return oauth
 
 # Function to create the URL to query the data
-def create_url(nifEmpresa):
+def api_url(nifEmpresa):
     # Calculate the start and end dates for the previous month
     prev_month_end = date.today().replace(day=1) - timedelta(days=1)
     prev_month_start = prev_month_end.replace(day=1)
@@ -23,7 +23,7 @@ def create_url(nifEmpresa):
     return url
 
 # Function to get the download link for the data
-def get_download_link(oauth, url):
+def api_download_link(oauth, url):
     # Make a GET request to the provided URL using OAuth session
     response = oauth.get(url)
 
@@ -51,7 +51,7 @@ def get_download_link(oauth, url):
     return download_link
 
 # Function to download the data and save it to Azure Data Lake
-def download_data_to_azure(oauth, download_link, account_name, account_key, file_system_name, file_name):
+def azure_upload(oauth, download_link, account_name, account_key, file_system_name, file_name):
     # Initialize DataLakeServiceClient with Azure account information
     data_service_client = DataLakeServiceClient(account_url=f"https://{account_name}.dfs.core.windows.net", credential=account_key)
     
@@ -83,11 +83,11 @@ def main():
         
         # Authenticate and create the API URL
         oauth = authenticate(consumer_key, consumer_secret)
-        url = create_url(nifEmpresa)
+        url = api_url(nifEmpresa)
         
         # Get the download link and download data to Azure Data Lake
-        download_link = get_download_link(oauth, url)
-        download_data_to_azure(oauth, download_link, account_name, account_key, file_system_name, "downloaded_data")
+        download_link = api_download_link(oauth, url)
+        azure_upload(oauth, download_link, account_name, account_key, file_system_name, "downloaded_data")
         
         print("Data downloaded successfully")
     except Exception as e:
