@@ -1,6 +1,9 @@
-# Optimal Location Identification System for Solar Panel Installation
+# Optimal Location Identification for Solar Panel Installation
 
 This project aims to develop a system for identifying optimal locations for the installation of new solar panel facilities based on electricity consumption data linked to cadastral references. The system will leverage the Barter tool, which provides cadastral data related to a geometric area defined over the Spanish geography.
+
+![barter](https://github.com/mistermakc/solar-energy-spatial-prediction/assets/60471340/d905f112-55be-4b53-949d-be9fca346c4e)
+
 
 ## Objective
 
