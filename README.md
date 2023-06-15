@@ -1,5 +1,7 @@
 # Optimal Location Identification for Solar Panel Installation
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This project aims to develop a system for identifying optimal locations for the installation of new solar panel facilities based on electricity consumption data linked to cadastral references. The system will leverage the Barter tool, which provides cadastral data related to a geometric area defined over the Spanish geography.
 
 ![barter](https://github.com/mistermakc/solar-energy-spatial-prediction/assets/60471340/d905f112-55be-4b53-949d-be9fca346c4e)
@@ -88,6 +90,6 @@ Please refer to the code comments for more details on the implementation.
 
 The provided code is part of the validation process for the project. Financial validation and further steps will be performed afterwards.
 
----
+## License
 
-Feel free to update this `README.md` file with more details as the project progresses. Good luck with your proof of concept!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
