@@ -1,11 +1,5 @@
-import LocationMenu from "./LocationMenu";
 import Map from "./Map";
 import Navbar from "./Navbar";
-import Suggestions from "./Suggestions";
+import ProfileCard from "./Profilecard";
 
-export {
-    LocationMenu,
-    Map,
-    Navbar,
-    Suggestions
-}
+export { Map, Navbar, ProfileCard };
