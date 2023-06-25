@@ -22,6 +22,9 @@ module.exports = {
         //"hero-pattern": "url('/src/assets/herobg.png')",
         "hero-pattern": "url('/src/assets/top-view-fresh-vegetables-with-greens-black.jpg')"
       },
+      fontFamily: {
+        'Barter': ['Lucida Console', 'Lucida COnsole']
+      }
     },
   },
   plugins: [],
