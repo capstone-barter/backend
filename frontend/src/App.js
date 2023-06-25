@@ -7,7 +7,7 @@ import Locator from "./pages/Locator";
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Contact />
     </div>
   );
 }
