@@ -6,7 +6,6 @@ import Model from "./pages/Model";
 
 import { Route, Routes } from "react-router-dom";
 
-
 function App() {
 
   return (
@@ -14,13 +13,11 @@ function App() {
       <>
         <NavBar />
         <div className="mt-20">
-          {/* {component} */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Locator" element={<Locator />} />
             <Route path="/Model" element={<Model />} />
-
           </Routes>
         </div>
       </>
