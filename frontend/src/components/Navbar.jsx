@@ -1,14 +1,16 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom';
 
 function NavBar() {
-  const location = window.location.pathname
+
+  const location = useLocation().pathname
 
   return (
     <>
       <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex items-center"
           >
             <img
@@ -16,7 +18,7 @@ function NavBar() {
               className="h-8 mr-3"
               alt="Flowbite Logo"
             ></img>
-          </a>
+          </Link>
           <div className="flex md:order-2">
             <button
               type="button"
@@ -56,8 +58,8 @@ function NavBar() {
 
             >
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className={`block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 md:dark:text-blue-500 
                     ${location === '/' ? 'text-blue-700' : 'text-gray-900'
                   }`}
@@ -65,35 +67,35 @@ function NavBar() {
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/Model"
+                <Link
+                  to="/Model"
                   className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
                   ${location === '/Model' ? 'text-blue-700' : 'text-gray-900'
                   }`}
                 >
                   Model
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/Locator"
+                <Link
+                  to="/Locator"
                   className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
                   ${location === '/Locator' ? 'text-blue-700' : 'text-gray-900'
                   }`}                >
                   Results
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/Contact"
+                <Link
+                  to="/Contact"
                   className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
                   ${location === '/Contact' ? 'text-blue-700' : 'text-gray-900'
                   }`}                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

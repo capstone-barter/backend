@@ -4,32 +4,24 @@ import Home from "./pages/Home";
 import Locator from "./pages/Locator";
 import Model from "./pages/Model";
 
+import { Route, Routes } from "react-router-dom";
 
 
 function App() {
-  let component;
 
-  switch(window.location.pathname) {
-    case "/":
-      component = <Home />
-      break;
-    case "/Contact":
-      component = <Contact />
-      break;
-    case "/Locator":
-      component = <Locator />
-      break;
-    case "/Model":
-      component = <Model />
-      break;
-  }
-  
   return (
     <div className="App">
       <>
         <NavBar />
         <div className="mt-20">
-          {component}
+          {/* {component} */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Locator" element={<Locator />} />
+            <Route path="/Model" element={<Model />} />
+
+          </Routes>
         </div>
       </>
     </div>
