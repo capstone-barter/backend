@@ -7,7 +7,7 @@ import CustomMap from "../components/Map";
 const Locator = () => {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar />
       <CustomMap></CustomMap>
     </>
   );

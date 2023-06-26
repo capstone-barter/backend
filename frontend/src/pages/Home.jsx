@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar />
       <br />
       <br />
       <br />
@@ -20,7 +20,7 @@ const Home = () => {
         location for Barter
       </p>
 
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };

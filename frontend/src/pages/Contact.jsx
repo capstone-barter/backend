@@ -6,7 +6,7 @@ import ProfileCard from "../components/Profilecard";
 const Contact = () => {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar /> 
       <br />
       <br />
       <br />
@@ -31,13 +31,13 @@ const Contact = () => {
           githubLink="https://github.com/Niccoborg22"
         ></ProfileCard>
         <ProfileCard
-          imageURL="https://media.licdn.com/dms/image/C4D03AQEHY6yiknxlXQ/profile-displayphoto-shrink_800_800/0/1584299339620?e=2147483647&v=beta&t=AOLo23N3V4_yypRB0G6jyzpKZyh4_gs6-9YsydE5Bck"
-          name="Niccolò Borgato"
+          imageURL="https://media.licdn.com/dms/image/C5603AQFGwOeVoNPvfQ/profile-displayphoto-shrink_800_800/0/1563886588332?e=2147483647&v=beta&t=PPpdDVjDWxjEzqIvonPuBaUp-fIJnhQLUak8GzOLwxw"
+          name="Joseph Guss"
           position="DevOps Engineer"
-          address="Milan, Italy"
-          phone="+39 340995012"
-          email="borgato.niccolo@gmail.com"
-          githubLink="https://github.com/Niccoborg22"
+          address="California, USA"
+          phone="+34 600074781"
+          email="jguss45@gmail.com"
+          githubLink="https://github.com/jguss45"
         ></ProfileCard>
         <ProfileCard
           imageURL="https://media.licdn.com/dms/image/C4D03AQEHY6yiknxlXQ/profile-displayphoto-shrink_800_800/0/1584299339620?e=2147483647&v=beta&t=AOLo23N3V4_yypRB0G6jyzpKZyh4_gs6-9YsydE5Bck"
