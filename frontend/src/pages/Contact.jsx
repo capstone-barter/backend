@@ -6,7 +6,7 @@ import ProfileCard from "../components/Profilecard";
 const Contact = () => {
   return (
     <>
-      <h1 class="mt-20 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl dark:text-white text-center pr-3 pl-3 ps-px">
+      <h1 class="mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl dark:text-white text-center pr-3 pl-3 ps-px">
         Innovating solar panels allocation with{" "}
         <span class="text-pink-500 dark:text-pink-600">machine learning</span>{" "}
       </h1>

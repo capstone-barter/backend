@@ -28,7 +28,9 @@ function App() {
     <div className="App">
       <>
         <NavBar />
-        {component}
+        <div className="mt-20">
+          {component}
+        </div>
       </>
     </div>
   );
