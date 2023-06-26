@@ -7,8 +7,8 @@ import CustomMap from "../components/Map";
 const Locator = () => {
   return (
     <>
-      <NavBar />
-      <CustomMap></CustomMap>
+      <h1 className="mt-20">Text Placeholder</h1>
+      <CustomMap />
     </>
   );
 };
