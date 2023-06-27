@@ -10,7 +10,6 @@ function App() {
 
   return (
     <div className="App">
-      <>
         <NavBar />
         <div className="mt-20">
           <Routes>
@@ -20,7 +19,7 @@ function App() {
             <Route path="/Model" element={<Model />} />
           </Routes>
         </div>
-      </>
+        
     </div>
   );
 }
