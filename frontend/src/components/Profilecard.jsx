@@ -10,7 +10,7 @@ function ProfileCard({
   githubLink,
 }) {
   return (
-    <div className="flex items-center h-screen w-full justify-center">
+    <div className="mt-20 flex items-center justify-center">
       <div className="max-w-xs">
         <div className="bg-white shadow-xl rounded-lg py-3">
           <div className="photo-wrapper p-2">
