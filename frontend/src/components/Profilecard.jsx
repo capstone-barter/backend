@@ -11,7 +11,7 @@ function ProfileCard({
 }) {
   return (
     <div className="mt-20 flex items-center justify-center">
-      <div className="max-w-xs">
+      <div className="max-w-xs h-full">
         <div className="bg-white shadow-xl rounded-lg py-3">
           <div className="photo-wrapper p-2">
             <img
