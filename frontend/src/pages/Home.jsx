@@ -12,10 +12,11 @@ const Home = () => {
           machine learning
         </span>{" "}
       </h1>
-      <p className="text-lg font-normal text-gray-600 lg:text-xl dark:text-gray-400 text-center pr-3 pl-3">
+      <p className="pb-7 text-lg font-normal text-gray-600 lg:text-xl dark:text-gray-400 text-center pr-3 pl-3">
         Machine Learning model to optimize the research of optimal solar panels
         location for Barter
       </p>
+      <img class="h-auto max-w-full" src="barter_image.jpg" alt="image barter" />
 
       <div className="bg-white p-5 rounded-lg mt-5 shadow-md">
         <p className="text-sm font-normal text-black lg:text-base text-center pr-3 pl-3">

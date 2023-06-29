@@ -1,5 +1,7 @@
 import React from "react";
 import ProfileCard from "../components/Profilecard";
+import Footer from "../components/Footer";
+
 
 
 const Contact = () => {
@@ -71,6 +73,7 @@ const Contact = () => {
           githubLink="https://github.com/Niccoborg22"
         ></ProfileCard>
       </div>
+      <Footer />
     </>
   );
 };
