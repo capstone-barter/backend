@@ -45,7 +45,7 @@ const Model = () => {
           </span>{" "}
         </div>
 
-        <div className="w-1/2 p-4 w-1/2 p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
+        <div className=" w-1/2 p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
           <a href="https://azure.microsoft.com/en-us/free/cloud-services/search/?ef_id=_k_Cj0KCQjw1_SkBhDwARIsANbGpFsZx_oOV81U9K2ZCJEbThMSLvSsMl7xQxHg_FGqiRieKwYGDwA3JtYaArQeEALw_wcB_k_&OCID=AIDcmmy6frl1tq_SEM__k_Cj0KCQjw1_SkBhDwARIsANbGpFsZx_oOV81U9K2ZCJEbThMSLvSsMl7xQxHg_FGqiRieKwYGDwA3JtYaArQeEALw_wcB_k_&gclid=Cj0KCQjw1_SkBhDwARIsANbGpFsZx_oOV81U9K2ZCJEbThMSLvSsMl7xQxHg_FGqiRieKwYGDwA3JtYaArQeEALw_wcB">
             <img
               className="h-auto max-w-[9rem]"
