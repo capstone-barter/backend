@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-
-// Import Mapbox CSS
 import 'mapbox-gl/dist/mapbox-gl.css';
+
+import ZipCodeConverter from './ZipToJson';
 
 // Replace 'YOUR_MAPBOX_ACCESS_TOKEN' with your actual Mapbox access token
 mapboxgl.accessToken = 'pk.eyJ1Ijoiamd1c3M0NSIsImEiOiJjbGpnNHAzZDIwNjdnM2Zta3A3NXJ6cmhnIn0.OE5tVwxKyKW8ha24G4YW2g';
 
-// Sample city and zip code data for Spain
-const cityData = [
-  { name: 'Madrid', zipCode: '28001', latitude: 40.4168, longitude: -3.7038 },
-  { name: 'Barcelona', zipCode: '08001', latitude: 41.3851, longitude: 2.1734 },
-  // Add more cities and zip codes as needed
-];
+// Get geoJSON data from ZipToJson component
+const geoJSON = ZipCodeConverter();
+
 
 const Map = () => {
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Map from "../components/Map";
-
+import ZipCodeConverter from "../components/ZipToJson";
 
 
 const Locator = () => {
@@ -8,6 +8,7 @@ const Locator = () => {
     <>
       <h1>Text Placeholder</h1>
       <Map />
+      <ZipCodeConverter /> 
     </>
   );
 };
