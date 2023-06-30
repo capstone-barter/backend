@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 import ZipCodeConverter from './ZipToJson';
 
-// Replace 'YOUR_MAPBOX_ACCESS_TOKEN' with your actual Mapbox access token
+// Mapbox access token
 mapboxgl.accessToken = 'pk.eyJ1Ijoiamd1c3M0NSIsImEiOiJjbGpnNHAzZDIwNjdnM2Zta3A3NXJ6cmhnIn0.OE5tVwxKyKW8ha24G4YW2g';
 
 // Get geoJSON data from ZipToJson component
-const geoJSON = ZipCodeConverter();
-
+//const geoJSON = ZipCodeConverter();
 
 const Map = () => {
   useEffect(() => {
