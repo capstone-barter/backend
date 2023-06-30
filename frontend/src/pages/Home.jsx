@@ -18,15 +18,6 @@ const Home = () => {
         solar panels
       </p>
 
-      <div className="bg-white p-5 rounded-lg mt-5 shadow-md">
-        <p className="text-sm font-normal text-black lg:text-base text-center pr-3 pl-3">
-          Welcome to Barter At Barter, we're committed to revolutionizing the
-          way we use and distribute energy. We facilitate ultra-fast charging
-          for electric vehicles using solar energy, democratize solar energy
-          without a roof and without investment, and monetize roofs by creating
-          solar communities.
-        </p>
-      </div>
 
       <div className="bg-white p-5 rounded-lg mt-5 shadow-md">
         <p className="text-sm font-normal text-black lg:text-base text-center pr-3 pl-3">
@@ -41,16 +32,6 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="bg-white p-5 rounded-lg mt-5 shadow-md">
-        <p className="text-sm font-normal text-black lg:text-base text-center pr-3 pl-3">
-          Join Our Energy Revolution Whether you're a business looking to
-          conserve cash and gain new customers, or an individual interested in
-          sustainable energy solutions, we invite you to join us. Together, we
-          can create a future where energy is more accessible, efficient, and
-          environmentally friendly.
-        </p>
-      </div>
-
       <div className="relative">
         <img
           className="h-auto max-w-full"
@@ -58,7 +39,9 @@ const Home = () => {
           alt="image barter"
         />
         <div className="absolute top-0 left-0 w-full h-full flex items-center pl-6">
-          <h1 className="text-5xl text-white font-bold">#InnovatingWithAI</h1>
+          <h1 className="sm:text-2xl md:text-3xl lg:text-5xl text-white font-bold">
+            #InnovatingWithAI
+          </h1>
         </div>
       </div>
       <br />
