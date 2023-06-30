@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 const Model = () => {
   return (
     <>
-      <h1 className="mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl dark:text-white text-center pt-5 pr-3 pl-3 ps-px">
+      <h1 className="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl dark:text-white text-center pt-5 pr-3 pl-3 ps-px">
         Machine Learning at the hearth of{" "}
         <span className="text-pink-500 dark:text-pink-600">innovation</span> and{" "}
         <span className="text-pink-500 dark:text-pink-600">efficiency</span>{" "}
@@ -14,6 +14,8 @@ const Model = () => {
         efficiency of the allocation of solar panels in Spain
       </p>
 
+      <hr className="w-48 h-1 mx-auto my-4 bg-purple-950 border-0 rounded md:my-10 dark:bg-gray-700" />
+
       <h3 class="text-center pt-5 pb-2 text-3xl font-bold text-purple-950 dark:text-white">
         Technologies used
       </h3>
@@ -21,7 +23,7 @@ const Model = () => {
         <div className="w-1/2 p-4 bg-purple-100 p-5 rounded-lg mt-5 shadow-md text-lg">
           The model has been developed using a pletora of different
           technologies. Given the quantity of data to work with, the team has
-          uploaded the data inthe{" "}
+          uploaded the data in the{" "}
           <span className="text-pink-500 dark:text-pink-600">
             Microsoft Azure cloud
           </span>{" "}
