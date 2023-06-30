@@ -21,7 +21,7 @@ const Model = () => {
         <div className="w-1/2 p-4 bg-purple-100 p-5 rounded-lg mt-5 shadow-md text-lg">
           The model has been developed using a pletora of different
           technologies. Given the quantity of data to work with, the team has
-          uploaded the data inthe{" "}
+          uploaded the data in the{" "}
           <span className="text-pink-500 dark:text-pink-600">
             Microsoft Azure cloud
           </span>{" "}

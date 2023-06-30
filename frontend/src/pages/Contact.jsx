@@ -17,12 +17,12 @@ const Contact = () => {
         Both components have been developed simoultanously to increase the
         workload efficiency
       </p>
-      <div className="grid grid-cols-2 gap-4 content-center	">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 content-center	">
         <div className="p-4 bg-purple-100 p-5 rounded-lg mt-5 shadow-md text-lg ">
           <h4 class="text-center pt-1 text-2xl font-bold text-pink-500 dark:text-white col">
             Machine Learning Model
           </h4>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-1">
+          <div className="grid lg:grid-cols-2 gap-1">
             <ProfileCard
               imageURL="https://media.licdn.com/dms/image/C4D03AQEHY6yiknxlXQ/profile-displayphoto-shrink_800_800/0/1584299339620?e=2147483647&v=beta&t=AOLo23N3V4_yypRB0G6jyzpKZyh4_gs6-9YsydE5Bck"
               name="Niccolò Borgato"
@@ -59,7 +59,7 @@ const Contact = () => {
           <h4 class="text-center pt-1 text-2xl font-bold text-purple-950 dark:text-white col">
             Web Application
           </h4>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-1">
+          <div className="grid lg:grid-cols-2 gap-1">
             <ProfileCard
               imageURL="https://media.licdn.com/dms/image/C4D03AQEHY6yiknxlXQ/profile-displayphoto-shrink_800_800/0/1584299339620?e=2147483647&v=beta&t=AOLo23N3V4_yypRB0G6jyzpKZyh4_gs6-9YsydE5Bck"
               name="Niccolò Borgato"
