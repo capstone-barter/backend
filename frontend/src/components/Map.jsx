@@ -29,20 +29,18 @@ const Map = () => {
   }, []);
 
   return (
-    <div 
-      id="map" 
-      style={{ 
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '60%',
-        height: '60%',
-        border: '2px solid #ccc',
-        borderRadius: '8px', 
-      }} 
+    <div
+      id="map"
+      style={{
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        width: "100%",
+        height: "100%",
+        border: "2px solid #42006B",
+        borderRadius: "8px",
+      }}
     />
-  
   );
 };
 

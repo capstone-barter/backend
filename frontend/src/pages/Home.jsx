@@ -1,11 +1,12 @@
 import React from "react";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import Map from "../components/Map";
 
 const Home = () => {
   return (
     <>
-      <h1 className="mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl dark:text-white text-center pr-3 pl-3 ps-px">
+      <h1 className="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl dark:text-white text-center pr-3 pl-3 ps-px">
         Innovating solar panels allocation with{" "}
         <span className="text-pink-500 dark:text-pink-600">
           machine learning
@@ -16,9 +17,10 @@ const Home = () => {
         technologies available to find the most suitable location to install
         solar panels
       </p>
+      <hr className="w-48 h-1 mx-auto my-4 bg-purple-950 border-0 rounded md:my-10 dark:bg-gray-700" />
 
       <div className="flex pr-4 pl-4">
-        <div className="w-1/2 p-4  p-5 rounded-lg mt-5 shadow-xl text-md">
+        <div className="w-3/4 p-4  p-5 rounded-md mt-5 text-md">
           Our Project Our main goal is to develop a system for identifying
           optimal locations for new facilities based on electricity consumption
           data linked to cadastral references. We're integrating SIPS (Supply
@@ -28,7 +30,7 @@ const Home = () => {
           consumption information, allowing us to make informed decisions on the
           location of future installations.
         </div>
-        <div className="pl-9 w-1/2 flex items-center">
+        <div className="pl-9 w-1/4 flex items-center">
           <img
             className="h-32"
             src="https://cdn-icons-png.flaticon.com/512/8637/8637099.png"
@@ -43,10 +45,23 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-white p-5 rounded-lg mt-5 shadow-md ">
-        <p className="text-sm font-normal text-black lg:text-base text-center pr-3 pl-3">
-          MAP
-        </p>
+      <div className="flex pr-4 pl-4">
+        <div className="pl-9 w-1/4 flex items-center">
+          <img
+            className="h-32"
+            src="https://cdn-icons-png.flaticon.com/512/854/854878.png"
+            alt="Model image"
+          />
+          <div className="pl-5"></div>
+          <Link to="/Model">
+            <button className="pl-4 bg-purple-950 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded">
+              Check out the Results
+            </button>
+          </Link>
+        </div>
+        <div className="w-3/4 p-4  p-5 rounded-lg mt-5 text-md h-96">
+          <Map />
+        </div>
       </div>
 
       <div className="relative">
