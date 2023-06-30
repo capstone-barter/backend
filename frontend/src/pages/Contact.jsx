@@ -2,8 +2,6 @@ import React from "react";
 import ProfileCard from "../components/Profilecard";
 import Footer from "../components/Footer";
 
-
-
 const Contact = () => {
   return (
     <>
@@ -19,9 +17,9 @@ const Contact = () => {
         Both components have been developed simoultanously to increase the
         workload efficiency
       </p>
-      <div className="flex pr-4 pl-4">
-        <div className="w-1/2 p-4 bg-purple-100 p-5 rounded-lg mt-5 shadow-md text-lg">
-          <h4 class="text-center pt-1 text-2xl font-bold text-purple-950 dark:text-white col">
+      <div className="grid grid-cols-2 gap-4 content-center	">
+        <div className="p-4 bg-purple-100 p-5 rounded-lg mt-5 shadow-md text-lg ">
+          <h4 class="text-center pt-1 text-2xl font-bold text-pink-500 dark:text-white col">
             Machine Learning Model
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-1">
@@ -57,7 +55,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-1/2 p-4 bg-purple-100 p-5 rounded-lg mt-5 shadow-md text-lg">
+        <div className="p-4 bg-pink-100 p-5 rounded-lg mt-5 shadow-md text-lg">
           <h4 class="text-center pt-1 text-2xl font-bold text-purple-950 dark:text-white col">
             Web Application
           </h4>
@@ -94,6 +92,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
     </>
   );
