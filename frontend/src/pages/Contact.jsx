@@ -94,6 +94,15 @@ const Contact = () => {
         </div>
       </div>
       <br />
+
+      <div className="flex justify-center items-center">
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/009/385/064/small/contact-us-buttons-clipart-design-illustration-free-png.png"
+          alt="Contact us"
+          className="h-16"
+        />
+      </div>
+      <br />
       <br />
       <br />
       <br />
