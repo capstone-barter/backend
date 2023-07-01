@@ -2,27 +2,65 @@ import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-import ZipCodeConverter from './ZipToJson';
+import polyData from '../data/malagaZipPolyBorder.geojson';
 
 // Mapbox access token
 mapboxgl.accessToken = 'pk.eyJ1Ijoiamd1c3M0NSIsImEiOiJjbGpnNHAzZDIwNjdnM2Zta3A3NXJ6cmhnIn0.OE5tVwxKyKW8ha24G4YW2g';
 
-// Get geoJSON data from ZipToJson component
-//const geoJSON = ZipCodeConverter();
-
 const Map = () => {
+  //useEffect used so map only rendered once
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: 'map', // container ID
-      // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
       style: 'mapbox://styles/mapbox/streets-v12', // style URL
       center: [-4.4214, 36.7213], // starting position [lng, lat]
       zoom: 12 // starting zoom
     });
 
+    map.on('style.load', () => {
+      // Use imported geoJSON data directly
+      const data = polyData;
+
+      // Make sure data has loaded correctly
+      if (data) {
+        // Add polygon geoJSON as data source
+        map.addSource('polygon', {
+          type: 'geojson',
+          data: data
+        });
+
+        // Add fill layer for polygon
+        map.addLayer({
+          id: 'polygon-fill',
+          type: 'fill',
+          source: 'polygon',
+          layout: {},
+          paint: {
+            'fill-color': '#0080ff',
+            'fill-opacity': 0.5
+          }
+        });
+
+        map.addLayer({
+          id: 'polygon-outline',
+          type: 'line',
+          source: 'polygon',
+          layout: {},
+          paint: {
+            'line-color': '#000',
+            'line-width': 2
+          }
+        });
+        
+      } else {
+        console.error("Issue with loading geoJSON data");
+      }
+    });
+
     // Cleanup map instance on component unmount
     return () => map.remove();
   }, []);
+
 
   return (
     <div
