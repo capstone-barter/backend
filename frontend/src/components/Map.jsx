@@ -11,9 +11,9 @@ const Map = () => {
   //useEffect used so map only rendered once
   useEffect(() => {
     const map = new mapboxgl.Map({
-      container: 'map', // container ID
-      style: 'mapbox://styles/mapbox/streets-v12', // style URL
-      center: [-4.4214, 36.7213], // starting position [lng, lat]
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v12',
+      center: [-4.4214, 36.7213], // starting position [lng, lat] to center on malaga
       zoom: 12 // starting zoom
     });
 
