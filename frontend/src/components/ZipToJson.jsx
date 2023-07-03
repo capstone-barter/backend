@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const ZipCodeConverter = () => {
-  const zipCodes = ['29001', '29002', '29003'];
   const [geoJSON, setGeoJSON] = useState(null);
 
   useEffect(() => {
+    const zipCodes = ['29001', '29002', '29003'];
+
     const convertToGeoJSON = async () => {
       const features = [];
 
@@ -40,7 +41,7 @@ const ZipCodeConverter = () => {
     };
 
     convertToGeoJSON();
-  }, [zipCodes]);
+  }, []);
 
   return (
     <div>
