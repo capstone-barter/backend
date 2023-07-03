@@ -6,18 +6,18 @@ import Map from "../components/Map";
 const Home = () => {
   return (
     <>
-      <h1 className="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl dark:text-white text-center pr-3 pl-3 ps-px">
+      <h1 className="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl text-center pr-3 pl-3 ps-px">
         Innovating solar panels allocation with{" "}
-        <span className="text-pink-500 dark:text-pink-600">
+        <span className="text-pink-500">
           machine learning
         </span>{" "}
       </h1>
-      <p className="pb-7 text-lg font-normal text-gray-600 lg:text-xl dark:text-gray-400 text-center pr-3 pl-3">
+      <p className="pb-7 text-lg font-normal text-gray-600 lg:text-xl text-center pr-3 pl-3">
         The team developed a machine learning model using the latest
         technologies available to find the most suitable location to install
         solar panels
       </p>
-      <hr className="w-48 h-1 mx-auto my-4 bg-purple-950 border-0 rounded md:my-10 dark:bg-gray-700" />
+      <hr className="w-48 h-1 mx-auto my-4 bg-purple-950 border-0 rounded md:my-10" />
 
       <div className="flex pr-4 pl-4">
         <div className="w-3/4 p-4  p-5 rounded-md mt-5 text-md">

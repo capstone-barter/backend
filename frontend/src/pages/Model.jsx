@@ -4,19 +4,19 @@ import Footer from "../components/Footer";
 const Model = () => {
   return (
     <>
-      <h1 className="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl dark:text-white text-center pt-5 pr-3 pl-3 ps-px">
+      <h1 className="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl text-center pt-5 pr-3 pl-3 ps-px">
         Machine Learning at the hearth of{" "}
-        <span className="text-pink-500 dark:text-pink-600">innovation</span> and{" "}
-        <span className="text-pink-500 dark:text-pink-600">efficiency</span>{" "}
+        <span className="text-pink-500">innovation</span> and{" "}
+        <span className="text-pink-500">efficiency</span>{" "}
       </h1>
-      <p className="text-lg font-normal text-gray-600 lg:text-xl dark:text-gray-400 text-center pr-3 pl-3">
+      <p className="text-lg font-normal text-gray-600 lg:text-xl text-center pr-3 pl-3">
         The machine learning model developed by the team aims at increasing the
         efficiency of the allocation of solar panels in Spain
       </p>
 
-      <hr className="w-48 h-1 mx-auto my-4 bg-purple-950 border-0 rounded md:my-10 dark:bg-gray-700" />
+      <hr className="w-48 h-1 mx-auto my-4 bg-purple-950 border-0 rounded md:my-10" />
 
-      <h3 class="text-center pt-5 pb-2 text-3xl font-bold text-purple-950 dark:text-white">
+      <h3 class="text-center pt-5 pb-2 text-3xl font-bold text-purple-950">
         Technologies used
       </h3>
       <div className="flex pr-4 pl-4">

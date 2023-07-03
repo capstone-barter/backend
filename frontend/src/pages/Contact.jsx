@@ -5,22 +5,22 @@ import Footer from "../components/Footer";
 const Contact = () => {
   return (
     <>
-      <h1 class="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl dark:text-white text-center pr-3 pl-3 ps-px">
+      <h1 class="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl text-center pr-3 pl-3 ps-px">
         The team worked on the{" "}
-        <span class="text-pink-500 dark:text-pink-600">frontend </span> and{" "}
-        <span class="text-pink-500 dark:text-pink-600">
+        <span class="text-pink-500">frontend </span> and{" "}
+        <span class="text-pink-500">
           machine learning model{" "}
         </span>{" "}
         simoultanously
       </h1>
-      <p class="pb-5 text-lg font-normal text-gray-600 lg:text-xl dark:text-gray-400 text-center pr-3 pl-3">
+      <p class="pb-5 text-lg font-normal text-gray-600 lg:text-xl text-center pr-3 pl-3">
         Both components have been developed simoultanously to increase the
         workload efficiency
       </p>
-      <hr className="w-48 h-1 mx-auto my-4 bg-purple-950 border-0 rounded md:my-10 dark:bg-gray-700" />
+      <hr className="w-48 h-1 mx-auto my-4 bg-purple-950 border-0 rounded md:my-10" />
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 content-center	">
         <div className="p-4 bg-purple-100 p-5 rounded-lg mt-5 shadow-md text-lg ">
-          <h4 class="text-center pt-1 text-2xl font-bold text-pink-500 dark:text-white col">
+          <h4 class="text-center pt-1 text-2xl font-bold text-pink-500 col">
             Machine Learning Model
           </h4>
           <div className="grid lg:grid-cols-2 gap-1">
@@ -57,7 +57,7 @@ const Contact = () => {
         </div>
 
         <div className="p-4 bg-pink-100 p-5 rounded-lg mt-5 shadow-md text-lg">
-          <h4 class="text-center pt-1 text-2xl font-bold text-purple-950 dark:text-white col">
+          <h4 class="text-center pt-1 text-2xl font-bold text-purple-950 col">
             Web Application
           </h4>
           <div className="grid lg:grid-cols-2 gap-1">
