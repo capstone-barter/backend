@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const ZipCodeConverter = () => {
+const HandleData = () => {
   const [geoJSON, setGeoJSON] = useState(null);
 
   useEffect(() => {
@@ -60,4 +60,4 @@ const ZipCodeConverter = () => {
   );
 };
 
-export default ZipCodeConverter;
+export default HandleData;
