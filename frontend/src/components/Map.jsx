@@ -5,7 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import polyData from '../data/malagaZipPolyBorder.geojson';
 
 // Mapbox access token
-mapboxgl.accessToken = 'pk.eyJ1Ijoiamd1c3M0NSIsImEiOiJjbGpnNHAzZDIwNjdnM2Zta3A3NXJ6cmhnIn0.OE5tVwxKyKW8ha24G4YW2g';
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 const Map = () => {
   //useEffect used so map only rendered once

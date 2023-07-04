@@ -1,29 +1,21 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-async function loginUser(credentials) {
-  return fetch("http://localhost:8080/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(credentials),
-  }).then((data) => data.json());
-}
+function Login({ handleLogin }) {
+  const [username, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-
-function Login({ setToken }) {
-    const [username, setUserName] = useState();
-    const [password, setPassword] = useState();
-
-    const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const token = await loginUser({
-        username,
-        password,
-    });
-    setToken(token);
-    };
+
+    if (username === "Barter" && password === "Capstone2023") {
+      handleLogin();
+    } else {
+      setError("Incorrect username or password");
+    }
+  };
+
   return (
     <>
       <section className="h-screen">
@@ -33,7 +25,7 @@ function Login({ setToken }) {
               <img
                 src="https://www.barterenergy.es/wp-content/uploads/2022/01/ComoFunciona_MOB_02-1024x757.jpg"
                 className="w-full"
-                alt="Phone image"
+                alt="Phone"
               />
               <div className="absolute top-0 left-0 w-full h-full flex items-center pl-10">
                 <h1 className="sm:text-2xl md:text-3xl lg:text-5xl text-white font-bold">
@@ -107,7 +99,7 @@ function Login({ setToken }) {
                     Forgot password?
                   </a>
                 </div>
-
+                {error && <p className="font-bold text-red-500">{error}</p>}
                 <button
                   type="submit"
                   className="inline-block w-full rounded bg-purple-950 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-purple-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-purple-950 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-purple-950 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
@@ -126,7 +118,7 @@ function Login({ setToken }) {
 }
 
 Login.propTypes = {
-  setToken: PropTypes.func.isRequired,
+  handleLogin: PropTypes.func.isRequired,
 };
 
 export default Login;
