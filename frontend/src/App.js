@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Locator from "./pages/Locator";
 import Model from "./pages/Model";
 
+import GeospatialModel from "./pages/Notebook";
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -23,12 +24,13 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="mt-20">
+      <div className="mt-20 ml-20 mr-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Locator" element={<Locator />} />
           <Route path="/Model" element={<Model />} />
+          <Route path="/Notebook" element={<GeospatialModel />} />
         </Routes>
       </div>
     </div>

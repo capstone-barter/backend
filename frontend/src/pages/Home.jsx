@@ -6,11 +6,9 @@ import Map from "../components/Map";
 const Home = () => {
   return (
     <>
-      <h1 className="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl text-center pr-3 pl-3 ps-px">
-        Innovating solar panels allocation with{" "}
-        <span className="text-pink-500">
-          machine learning
-        </span>{" "}
+      <h1 className="ml-7 mr-7 pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl text-center pr-3 pl-3 ps-px">
+        Innovating Solar Panels Allocation with{" "}
+        <span className="text-pink-500">Machine Learning</span>{" "}
       </h1>
       <p className="pb-7 text-lg font-normal text-gray-600 lg:text-xl text-center pr-3 pl-3">
         The team developed a machine learning model using the latest
@@ -39,7 +37,7 @@ const Home = () => {
           <div className="pl-5"></div>
           <Link to="/Model">
             <button className="pl-4 bg-purple-950 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded">
-              Learn more about the Model
+              Learn More about the Model
             </button>
           </Link>
         </div>
@@ -55,14 +53,22 @@ const Home = () => {
           <div className="pl-5"></div>
           <Link to="/Model">
             <button className="pl-4 bg-purple-950 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded">
-              Check out the Results
+              Check Out the Results
             </button>
           </Link>
         </div>
         <div className="w-3/4 p-4  p-5 rounded-lg mt-5 text-md h-96">
-          <Map />
+          <img
+            src="map_image.jpeg"
+            alt="Image Map Results"
+            className="border-2 border-purple-950"
+          />
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
 
       <div className="relative">
         <img
