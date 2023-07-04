@@ -133,9 +133,11 @@ const Model = () => {
         </div>
       </div>
       <div className="flex justify-center pt-3">
-        <button className=" bg-purple-950 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded-full">
-          Check out the full Notebook
-        </button>
+        <a href="/Notebook">
+          <button className=" bg-purple-950 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded-full">
+            Check out the full Notebook
+          </button>
+        </a>
       </div>
 
       <br />
