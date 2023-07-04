@@ -1,19 +1,25 @@
+import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+
 import Login from "./components/Login";
 import NavBar from "./components/Navbar";
-import useToken from "./components/useToken";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Locator from "./pages/Locator";
 import Model from "./pages/Model";
-import React, { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+
 
 function App() {
-  const { token, setToken } = useToken();
+  const [isLoggedIn, setLoggedIn] = useState(false);
 
-  if (!token) {
-    return <Login setToken={setToken} />;
+  const handleLogin = () => {
+    setLoggedIn(true);
+  };
+
+  if (!isLoggedIn) {
+    return <Login handleLogin={handleLogin} />;
   }
+
   return (
     <div className="App">
       <NavBar />
