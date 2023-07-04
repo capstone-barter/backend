@@ -27,17 +27,29 @@ function Login({ setToken }) {
   return (
     <>
       <section className="h-screen">
-        <div className="container h-full px-6 py-24">
+        <div className="container h-full py-24">
           <div className="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
-            <div className="mb-12 md:mb-0 md:w-8/12 lg:w-6/12">
+            <div className="md:relative sm:absolute sm:collapse mb-12 md:mb-0 md:visible md:w-8/12 lg:w-6/12 lg:visible">
               <img
-                src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                src="https://www.barterenergy.es/wp-content/uploads/2022/01/ComoFunciona_MOB_02-1024x757.jpg"
                 className="w-full"
                 alt="Phone image"
               />
+              <div className="absolute top-0 left-0 w-full h-full flex items-center pl-10">
+                <h1 className="sm:text-2xl md:text-3xl lg:text-5xl text-white font-bold">
+                  #InnovatingWithAI
+                </h1>
+              </div>
             </div>
 
-            <div className="md:w-8/12 lg:ml-6 lg:w-5/12">
+            <div className="md:w-8/12 lg:ml-6 lg:w-5/12 pr-7">
+              <div className="flex justify-center">
+                <img
+                  src="https://www.barterenergy.es/wp-content/uploads/2021/12/logo_barter_color-1.png"
+                  alt="Barter Logo"
+                  className="pb-10 w-52"
+                />
+              </div>
               <form onSubmit={handleSubmit}>
                 <div className="relative mb-6" data-te-input-wrapper-init>
                   <input
@@ -90,7 +102,7 @@ function Login({ setToken }) {
 
                   <a
                     href="#!"
-                    className="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                    className="sm:collapse text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
                   >
                     Forgot password?
                   </a>
