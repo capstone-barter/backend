@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom';
 
-function NavBar() {
+function NavBar({ handleLogout }) {
 
   const location = useLocation().pathname
 
@@ -20,6 +20,13 @@ function NavBar() {
             ></img>
           </Link>
           <div className="flex md:order-2">
+            <button
+              type="button"
+              onClick={handleLogout}
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0"
+            >
+              Logout
+            </button>
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
