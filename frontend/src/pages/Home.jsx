@@ -34,7 +34,7 @@ const Home = () => {
           <img
             className="h-32"
             src="https://cdn-icons-png.flaticon.com/512/8637/8637099.png"
-            alt="Model image"
+            alt="Model"
           />
           <div className="pl-5"></div>
           <Link to="/Model">
@@ -50,7 +50,7 @@ const Home = () => {
           <img
             className="h-32"
             src="https://cdn-icons-png.flaticon.com/512/854/854878.png"
-            alt="Model image"
+            alt="Model "
           />
           <div className="pl-5"></div>
           <Link to="/Model">
@@ -68,7 +68,7 @@ const Home = () => {
         <img
           className="h-auto max-w-full"
           src="barter_image.jpg"
-          alt="image barter"
+          alt="barter"
         />
         <div className="absolute top-0 left-0 w-full h-full flex items-center pl-6">
           <h1 className="sm:text-2xl md:text-3xl lg:text-5xl text-white font-bold">
