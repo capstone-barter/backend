@@ -5,12 +5,9 @@ import Footer from "../components/Footer";
 const Contact = () => {
   return (
     <>
-      <h1 class="pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl text-center pr-3 pl-3 ps-px">
-        The team worked on the{" "}
-        <span class="text-pink-500">frontend </span> and{" "}
-        <span class="text-pink-500">
-          machine learning model{" "}
-        </span>{" "}
+      <h1 class="ml-7 mr-7 pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl text-center pr-3 pl-3 ps-px">
+        The Team Worked on the <span class="text-pink-500">Frontend </span> and{" "}
+        <span class="text-pink-500">Machine Learning Model </span>{" "}
         simoultanously
       </h1>
       <p class="pb-5 text-lg font-normal text-gray-600 lg:text-xl text-center pr-3 pl-3">

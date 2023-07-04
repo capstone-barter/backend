@@ -12,13 +12,13 @@ function Footer() {
       </span>
       <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500">
         <li>
-          <a href="/Home" class="mr-4 hover:underline md:mr-6">
+          <a href="/Model" class="mr-4 hover:underline md:mr-6">
             About
           </a>
         </li>
         <li>
           <a href="/Locator" class="mr-4 hover:underline md:mr-6">
-            Malaga Example
+            Malaga Proof Of Concept
           </a>
         </li>
         <li>
