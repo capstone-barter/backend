@@ -22,22 +22,22 @@ const Contact = () => {
           </h4>
           <div className="grid lg:grid-cols-2 gap-1">
             <ProfileCard
-              imageURL="https://media.licdn.com/dms/image/C4D03AQEHY6yiknxlXQ/profile-displayphoto-shrink_800_800/0/1584299339620?e=2147483647&v=beta&t=AOLo23N3V4_yypRB0G6jyzpKZyh4_gs6-9YsydE5Bck"
-              name="Niccolò Borgato"
-              position="DevOps Engineer"
-              address="Milan, Italy"
-              phone="+39 340995012"
-              email="borgato.niccolo@gmail.com"
-              githubLink="https://github.com/Niccoborg22"
+              imageURL="https://avatars.githubusercontent.com/u/73837611?v=4"
+              name="Nicholas Dieke"
+              position="Backend Engineer"
+              address="Germany, Europe"
+              phone="+44 7585893530"
+              email="nicholasdieke@student.ie.edu"
+              githubLink="https://github.com/nicholasdieke"
             ></ProfileCard>
             <ProfileCard
-              imageURL="https://media.licdn.com/dms/image/C5603AQFGwOeVoNPvfQ/profile-displayphoto-shrink_800_800/0/1563886588332?e=2147483647&v=beta&t=PPpdDVjDWxjEzqIvonPuBaUp-fIJnhQLUak8GzOLwxw"
-              name="Joseph Guss"
-              position="DevOps Engineer"
-              address="California, USA"
-              phone="+34 600074781"
-              email="jguss45@gmail.com"
-              githubLink="https://github.com/jguss45"
+              imageURL="https://avatars.githubusercontent.com/u/114749546?v=4"
+              name="Jean Jacob Klat"
+              position="Machine Learning Expert"
+              address="Belgium, Europe"
+              phone="+32 470651050"
+              email="jean-jacob.klat@student.ie.edu"
+              githubLink="https://github.com/JJclover"
             ></ProfileCard>
             <div class="col-span-2 ">
               <ProfileCard
@@ -78,13 +78,13 @@ const Contact = () => {
             ></ProfileCard>
             <div class="col-span-2 ">
               <ProfileCard
-                imageURL="https://media.licdn.com/dms/image/C4D03AQEHY6yiknxlXQ/profile-displayphoto-shrink_800_800/0/1584299339620?e=2147483647&v=beta&t=AOLo23N3V4_yypRB0G6jyzpKZyh4_gs6-9YsydE5Bck"
-                name="Niccolò Borgato"
-                position="DevOps Engineer"
-                address="Milan, Italy"
-                phone="+39 340995012"
-                email="borgato.niccolo@gmail.com"
-                githubLink="https://github.com/Niccoborg22"
+                imageURL=""
+                name="Lorenzo Stuani"
+                position="Frontend Expert"
+                address="Italy, Europe"
+                phone="+39 3355206062"
+                email=""
+                githubLink=""
               ></ProfileCard>
             </div>
           </div>

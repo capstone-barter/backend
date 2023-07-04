@@ -37,7 +37,7 @@ const Home = () => {
           <div className="pl-5"></div>
           <Link to="/Model">
             <button className="pl-4 bg-purple-950 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded">
-              Learn more about the Model
+              Learn More about the Model
             </button>
           </Link>
         </div>
@@ -53,7 +53,7 @@ const Home = () => {
           <div className="pl-5"></div>
           <Link to="/Model">
             <button className="pl-4 bg-purple-950 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded">
-              Check out the Results
+              Check Out the Results
             </button>
           </Link>
         </div>
