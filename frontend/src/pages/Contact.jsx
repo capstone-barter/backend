@@ -7,7 +7,7 @@ const Contact = () => {
     <>
       <h1 class="ml-7 mr-7 pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl text-center pr-3 pl-3 ps-px">
         The Team Worked on the <span class="text-pink-500">Frontend </span> and{" "}
-        <span class="text-pink-500">Machine Learning Model </span>{" "}
+        <span class="text-pink-500">Optimization Model </span>{" "}
         simoultanously
       </h1>
       <p class="pb-5 text-lg font-normal text-gray-600 lg:text-xl text-center pr-3 pl-3">
@@ -33,7 +33,7 @@ const Contact = () => {
             <ProfileCard
               imageURL="https://avatars.githubusercontent.com/u/114749546?v=4"
               name="Jean Jacob Klat"
-              position="Machine Learning Expert"
+              position="Backend Engineer"
               address="Belgium, Europe"
               phone="+32 470651050"
               email="jean-jacob.klat@student.ie.edu"
@@ -43,7 +43,7 @@ const Contact = () => {
               <ProfileCard
                 imageURL="https://avatars.githubusercontent.com/u/60471340?v=4"
                 name="Max Heilingbrunner"
-                position="Backend Engineer"
+                position="Data Scientist"
                 address="Munich, Germany"
                 phone="+49 1785444411"
                 email="max.heilingbrunner@student.ie.edu"
