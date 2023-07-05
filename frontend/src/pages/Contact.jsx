@@ -24,7 +24,7 @@ const Contact = () => {
             <ProfileCard
               imageURL="https://avatars.githubusercontent.com/u/73837611?v=4"
               name="Nicholas Dieke"
-              position="Backend Engineer"
+              position="Full-Stack Developer"
               address="Germany, Europe"
               phone="+44 7585893530"
               email="nicholasdieke@student.ie.edu"
@@ -41,13 +41,13 @@ const Contact = () => {
             ></ProfileCard>
             <div class="col-span-2 ">
               <ProfileCard
-                imageURL="https://media.licdn.com/dms/image/C4D03AQEHY6yiknxlXQ/profile-displayphoto-shrink_800_800/0/1584299339620?e=2147483647&v=beta&t=AOLo23N3V4_yypRB0G6jyzpKZyh4_gs6-9YsydE5Bck"
-                name="Niccolò Borgato"
-                position="DevOps Engineer"
-                address="Milan, Italy"
-                phone="+39 340995012"
-                email="borgato.niccolo@gmail.com"
-                githubLink="https://github.com/Niccoborg22"
+                imageURL="https://avatars.githubusercontent.com/u/60471340?v=4"
+                name="Max Heilingbrunner"
+                position="Backend Engineer"
+                address="Munich, Germany"
+                phone="+49 1785444411"
+                email="max.heilingbrunner@student.ie.edu"
+                githubLink="https://github.com/mistermakc"
               ></ProfileCard>
             </div>
           </div>
@@ -78,13 +78,13 @@ const Contact = () => {
             ></ProfileCard>
             <div class="col-span-2 ">
               <ProfileCard
-                imageURL=""
+                imageURL="https://media.licdn.com/dms/image/D4D03AQGx_Siow08wjw/profile-displayphoto-shrink_800_800/0/1688480907901?e=1694044800&v=beta&t=wB_RZ6vSxpDVStsD23sTeKCAKo-No7iCGcV89g6iroQ"
                 name="Lorenzo Stuani"
                 position="Frontend Expert"
                 address="Italy, Europe"
                 phone="+39 3355206062"
-                email=""
-                githubLink=""
+                email="lorenzo.stuani@icloud.com"
+                githubLink="https://github.com/lorenzostuani"
               ></ProfileCard>
             </div>
           </div>
