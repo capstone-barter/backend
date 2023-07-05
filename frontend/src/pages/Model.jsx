@@ -5,12 +5,12 @@ const Model = () => {
   return (
     <>
       <h1 className="ml-7 mr-7 pt-9 mb-5 text-6xl font-bold leading-none tracking-normal text-purple-950 md:text-5xl lg:text-6xl text-center pt-5 pr-3 pl-3 ps-px">
-        Machine Learning at the Heart of{" "}
+        Data Optimization at the Heart of{" "}
         <span className="text-pink-500">Innovation</span> and{" "}
         <span className="text-pink-500">Efficiency</span>{" "}
       </h1>
       <p className="text-lg font-normal text-gray-600 lg:text-xl text-center pr-3 pl-3">
-        The machine learning model developed by the team aims at increasing the
+        The optimization model developed by the team aims at increasing the
         efficiency of the allocation of solar panels in Spain
       </p>
 
