@@ -114,7 +114,7 @@ const Model = () => {
         <div className="max-w-3xl">
           <img
             className="h-auto max-w-full rounded-lg"
-            src="Architecture.jpeg"
+            src="Architecture.jpg"
             alt="Model Architecture"
           />
         </div>
