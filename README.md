@@ -2,12 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://img.shields.io/github/workflow/status/mistermakc/solar-energy-spatial-prediction/CI)](https://github.com/mistermakc/solar-energy-spatial-prediction/actions/workflows/ci.yml)
-![Plantilla-Cabecera-Blog-Barter](https://github.com/capstone-barter/capstone/assets/60471340/96fd89de-7d45-4555-9360-e0d5146933df)
-
 
 This project aims to develop a system for identifying optimal locations for the installation of new solar panel facilities based on electricity consumption data linked to cadastral references for the proof of concept in Malaga. The system will leverage a newly developed tool, which provides cadastral data related to a geometric area defined over the Malaga geography.
 
-![barter](https://github.com/mistermakc/solar-energy-spatial-prediction/assets/60471340/d905f112-55be-4b53-949d-be9fca346c4e)
+![Plantilla-Cabecera-Blog-Barter](https://github.com/capstone-barter/capstone/assets/60471340/96fd89de-7d45-4555-9360-e0d5146933df)
 
 
 ## Objective
