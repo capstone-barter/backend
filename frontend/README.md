@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+[![Blitz.js](https://raw.githubusercontent.com/blitz-js/art/master/github-cover-photo.png)](https://blitzjs.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a minimal [Blitz.js](https://github.com/blitz-js/blitz) app.
 
-## Available Scripts
+# **barter-web-app**
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+Run your app in the development mode.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+blitz dev
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### `npm test`
+## Tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs your tests using Jest.
 
-### `npm run build`
+```
+yarn test
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Blitz comes with a test setup using [Vitest](https://vitest.dev/) and [react-testing-library](https://testing-library.com/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Commands
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Blitz comes with a powerful CLI that is designed to make development easy and fast. You can install it with `npm i -g blitz`
 
-### `npm run eject`
+```
+  blitz [COMMAND]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  dev       Start a development server
+  build     Create a production build
+  start     Start a production server
+  export    Export your Blitz app as a static application
+  prisma    Run prisma commands
+  generate  Generate new files for your Blitz project
+  console   Run the Blitz console REPL
+  install   Install a recipe
+  help      Display help for blitz
+  test      Run project tests
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You can read more about it on the [CLI Overview](https://blitzjs.com/docs/cli-overview) documentation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## What's included?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Here is the starting structure of your app.
 
-## Learn More
+```
+barter-web-app
+├── src/
+│   ├── pages/
+│   │   ├── _app.tsx
+│   │   ├── _document.tsx
+│   │   ├── 404.tsx
+│   │   ├── index.test.tsx
+│   │   └── index.tsx
+├── public/
+│   ├── favicon.ico
+│   └── logo.png
+├── test/
+│   ├── setup.ts
+│   └── utils.tsx
+├── .eslintrc.js
+├── babel.config.js
+├── blitz.config.ts
+├── vitest.config.ts
+├── package.json
+├── README.md
+├── tsconfig.json
+└── types.ts
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+These files are:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The `src/` folder is a container for most of your project. This is where you’ll put any pages or API routes.
 
-### Code Splitting
+- `public/` is a folder where you will put any static assets. If you have images, files, or videos which you want to use in your app, this is where to put them.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `test/` is a folder where you can put test utilities and integration tests.
 
-### Analyzing the Bundle Size
+- `package.json` contains information about your dependencies and devDependencies. If you’re using a tool like `npm` or `yarn`, you won’t have to worry about this much.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `tsconfig.json` is our recommended setup for TypeScript.
 
-### Making a Progressive Web App
+- `.babel.config.js`, `.eslintrc.js`, `.env`, etc. ("dotfiles") are configuration files for various bits of JavaScript tooling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `blitz.config.ts` is for advanced custom configuration of Blitz. [Here you can learn how to use it](https://blitzjs.com/docs/blitz-config).
 
-### Advanced Configuration
+- `vitest.config.ts` contains config for Vitest tests. You can [customize it if needed](https://vitejs.dev/config/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+You can read more about it in the [File Structure](https://blitzjs.com/docs/file-structure) section of the documentation.
 
-### Deployment
+### Tools included
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Blitz comes with a set of tools that corrects and formats your code, facilitating its future maintenance. You can modify their options and even uninstall them.
 
-### `npm run build` fails to minify
+- **ESLint**: It lints your code: searches for bad practices and tell you about it. You can customize it via the `.eslintrc.js`, and you can install (or even write) plugins to have it the way you like it. It already comes with the [`blitz`](https://github.com/blitz-js/blitz/tree/canary/packages/eslint-config) config, but you can remove it safely. [Learn More](https://blitzjs.com/docs/eslint-config).
+- **Husky**: It adds [githooks](https://git-scm.com/docs/githooks), little pieces of code that get executed when certain Git events are triggerd. For example, `pre-commit` is triggered just before a commit is created. You can see the current hooks inside `.husky/`. If are having problems commiting and pushing, check out ther [troubleshooting](https://typicode.github.io/husky/#/?id=troubleshoot) guide. [Learn More](https://blitzjs.com/docs/husky-config).
+- **Prettier**: It formats your code to look the same everywhere. You can configure it via the `.prettierrc` file. The `.prettierignore` contains the files that should be ignored by Prettier; useful when you have large files or when you want to keep a custom formatting. [Learn More](https://blitzjs.com/docs/prettier-config).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Learn more
+
+Read the [Blitz.js Documentation](https://blitzjs.com/docs/getting-started) to learn more.
+
+The Blitz community is warm, safe, diverse, inclusive, and fun! Feel free to reach out to us in any of our communication channels.
+
+- [Website](https://blitzjs.com)
+- [Discord](https://blitzjs.com/discord)
+- [Report an issue](https://github.com/blitz-js/blitz/issues/new/choose)
+- [Forum discussions](https://github.com/blitz-js/blitz/discussions)
+- [How to Contribute](https://blitzjs.com/docs/contributing)
+- [Sponsor or donate](https://github.com/blitz-js/blitz#sponsors-and-donations)

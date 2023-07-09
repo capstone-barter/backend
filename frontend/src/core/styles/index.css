@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hero {
+    @apply w-full text-[#333];
+  }
+}
+
+.title {
+  @apply m-0 w-full pt-20;
+  font-size: 48px;
+}
+
+.title,
+.description {
+  @apply text-center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.map-overlay {
+  font-size: "22px";
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  position: absolute;
+  width: 15%;
+  bottom: 5%;
+  left: 2%;
+  padding: 10px;
+}
+
+.rounded-rect {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 50px -25px black;
+}
+
+.flex-center {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center.left {
+  left: 0px;
+}
+
+.flex-center.right {
+  right: 0px;
+}
+
+.sidebar-content {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
+  padding-bottom: 0px;
+  flex-direction: column;
+}
+
+.sidebar-toggle:hover {
+  color: #0aa1cf;
+  cursor: pointer;
+}
+
+.sidebar {
+  transition: transform 0.5s;
+  z-index: 1;
+  width: 500px;
+  height: 90%;
+}
+
+.mapboxgl-control-container {
+  height: "0px" !important;
+}
+
+.sidebar.collapsed {
+  transform: translateX(495px);
+}
+
+.closeButtonContainer {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 1;
+}
+
+.closeButton {
+  font-size: 18px;
+  cursor: pointer;
+  color: #878787;
+}
+
+.pieChartBox {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 150px;
+  width: 100%;
+}
+
+.kpiBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kpiItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.kpiIcon {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.kpiLabel {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.kpiValue {
+  font-size: 16px;
+  text-align: center;
+}
+
+.pieHeading {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+:root {
+  --map-height: calc(100vh - 75px);
+}
+
+.map {
+  height: var(--map-height);
+}
+
+.popup {
+  z-index: 9999; /* Adjust the z-index value as needed */
+  position: absolute; /* Adjust the positioning as needed */
+  /* Add any other custom styles for the popup */
+}
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.login-form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
