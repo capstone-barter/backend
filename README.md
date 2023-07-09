@@ -2,9 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://img.shields.io/github/workflow/status/mistermakc/solar-energy-spatial-prediction/CI)](https://github.com/mistermakc/solar-energy-spatial-prediction/actions/workflows/ci.yml)
-[![Version](https://img.shields.io/github/v/release/mistermakc/solar-energy-spatial-prediction)](https://github.com/mistermakc/solar-energy-spatial-prediction/releases)
+![Plantilla-Cabecera-Blog-Barter](https://github.com/capstone-barter/capstone/assets/60471340/96fd89de-7d45-4555-9360-e0d5146933df)
 
-This project aims to develop a system for identifying optimal locations for the installation of new solar panel facilities based on electricity consumption data linked to cadastral references. The system will leverage the Barter tool, which provides cadastral data related to a geometric area defined over the Spanish geography.
+
+This project aims to develop a system for identifying optimal locations for the installation of new solar panel facilities based on electricity consumption data linked to cadastral references for the proof of concept in Malaga. The system will leverage a newly developed tool, which provides cadastral data related to a geometric area defined over the Malaga geography.
 
 ![barter](https://github.com/mistermakc/solar-energy-spatial-prediction/assets/60471340/d905f112-55be-4b53-949d-be9fca346c4e)
 
@@ -21,13 +22,6 @@ The scope of the project includes the following aspects:
 - Commercialization of solar energy
 - Mobility aspects related to solar energy usage
 
-## Numbers
-
-The project involves the following numbers:
-
-- 68 photovoltaic installations with 5k kW output
-- 1,045 ultra-fast chargers in Spain
-
 ## General Problem
 
 The general problem to address in this project is the legalization of solar panel installation plans and sharing energy with consumers within a limited radius around each installation.
@@ -38,18 +32,14 @@ The project involves the following challenges:
 
 1. Developing a system for identifying optimal locations for new solar panel facilities.
 2. Analyzing the area to locate target customers, considering the legalization issues.
-3. Restricting the sale of energy to customers within a 1km radius (2km total) around each installation.
+3. Providing a robust ETL process to improve data integration and handling.
 
 ## Data
 
 The project requires the following data:
 
-- CUPS (Código Unificado de Punto de Suministro) data
+- CUPS (Código Unificado de Punto de Suministro) Electricity consumption data
 - Cadastral data
-- Weather data
-- Solar radiation data
-- Electricity consumption data
-- Additional enriching data
 
 ## Requirements
 
@@ -59,7 +49,7 @@ The project has the following requirements:
 - Download and storage of SIPS data.
 - Ensuring compatibility and integrity of the obtained data.
 - Cross-referencing consumption data with cadastral data.
-- Estimation of monthly electricity consumption.
+- Analysis of monthly electricity consumption.
 
 ## Technology Proposal
 
